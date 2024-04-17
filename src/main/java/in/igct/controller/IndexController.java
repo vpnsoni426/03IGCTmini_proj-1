@@ -17,8 +17,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import in.igct.binding.EnquiryForm;
 import in.igct.binding.IGCTCourse;
 import in.igct.service.CourseService;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-@Controller
+@Controller("/")
 	@RequestMapping("/")
 public class IndexController {
 	
