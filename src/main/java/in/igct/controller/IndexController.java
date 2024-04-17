@@ -19,6 +19,7 @@ import in.igct.binding.IGCTCourse;
 import in.igct.service.CourseService;
 
 @Controller
+	@RequestMapping("/")
 public class IndexController {
 	
 	@Autowired 	
@@ -27,7 +28,7 @@ public class IndexController {
   @Autowired   
   JavaMailSender sender;
 	
-	@GetMapping("/")
+	@GetMapping("/all")
 	public String indexPage()
 	{
 		return "index";
